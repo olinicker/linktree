@@ -1,0 +1,67 @@
+.main-content {
+  flex-grow: 1;
+  width: 100%;
+  padding: 3rem 1rem;
+}
+
+.game-links-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.game-card {
+  text-decoration: none;
+  color: #ffffff;
+  overflow: hidden;
+
+  background-color: #1c1c3a;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  flex-basis: 45%;
+  min-width: 300px;
+
+  min-height: 280px;
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
+  border-color: #8a2be2;
+}
+
+.card-image-placeholder {
+  height: 100%;
+  min-height: 280px;
+
+  background-color: #333;
+  background-size: 100% 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #888;
+  transition: transform 0.3s ease;
+}
+
+#clash-card .card-image-placeholder {
+  background-image: url(../assets/clashroyale.png);
+}
+#valorant-card .card-image-placeholder {
+  background-image: url(../assets/valorant.png);
+}
+#lol-card .card-image-placeholder {
+  background-image: url(../assets/league.png);
+}
+
+.game-card:hover .card-image-placeholder {
+  transform: scale(1.05);
+}
